@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <style>
+    .main {
+      border: 2px #868686 solid;
+      height: 510px;
+      width: 450px;
+      background-color: #f0f0f0;
+      box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+    }
+    #mainForm {
+      padding: 20px 30px 20px 30px;
+    }
+    #userForm {
+      margin-bottom: 5px;
+    }
+    #passwordForm {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    #btnForm {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    #btnLogin {
+      margin-right: 4px;
+    }
+    #form {
+      position: absolute;
+      top: 30px;
+    }
+  </style>
+  <body>
+    <div
+      class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
+      style="background-color: #c5c9d1"
+    >
+      <div class="main">
+        <form
+          id="mainForm"
+          #userForm="ngForm"
+          (ngSubmit)="FormData(userForm.value)"
+        >
+          <div id="userForm" form="userForm" class="form-group">
+            <label for="exampleInputEmail1">Nombre de Usaurio</label>
+            <input
+              type="text"
+              ngModel
+              name="Nombre"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingrese Su Nombre" required
+>   
+          </div>
+
+          <div id="userForm" class="form-group">
+            <label for="exampleInputEmail1">Apellido</label>
+            <input
+              type="text"
+              ngModel
+              name="apellido"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingrese Su Apellido" required
+            />
+          </div>
+          <div id="userForm" class="form-group">
+            <label for="exampleInputEmail1">Cargo</label>
+            <input
+              type="text"
+              ngModel
+              name="Cargo"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingrese su Cargo" required
+            />
+          </div>
+          <div id="userForm" class="form-group">
+            <label for="exampleInputEmail1">Correo</label>
+            <input
+              type="email"
+              ngModel
+              name="correo"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingrese el Correo" required="email"
+            />
+          </div>
+          <div id="userForm" class="form-group">
+            <label for="exampleInputEmail1">Nombre de Usaurio</label>
+            <input
+              type="text"
+              ngModel
+              name="nUser"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Ingrese el Nombre de Usuario" required
+            />
+          </div>
+
+          <div id="passwordForm" class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              ngModel
+              name="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password" required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >Don't share your password</small
+            >
+          </div>
+
+          <div id="btnForm" class="btnSubmit">
+            <button type="submit" id="btnSign" class="btn btn-secondary" [disabled]="!userForm.valid">
+              Registrase
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

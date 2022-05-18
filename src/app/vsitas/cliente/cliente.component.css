@@ -1,0 +1,41 @@
+#perfil{
+    width: 120px;
+    height: 105px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    border-radius: 5%;
+    border: 3px #868686 solid;
+    background-color: aqua;
+}
+
+#panel{
+    position: absolute;
+    top: 40px;
+    left: 200px; 
+    height: 180px;
+    border-radius:10px;
+    border: 3px #868686 solid;
+    background-color:white;
+}
+
+#data{
+    position: absolute;
+    top: 200px;
+    border: 3px #868686 solid;
+}
+
+#data2{
+    position: absolute;
+    top: 500px;
+    border: 3px #868686 solid;
+}
+#btnMas{
+    position: absolute;
+    top: 165px;
+    left: 55px;
+}
+
+
+
+
